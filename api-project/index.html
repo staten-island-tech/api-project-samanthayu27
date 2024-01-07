@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API project</title>
+  </head>
+  <body class="greenmode">
+    <div class="app">
+      <h1 class="title">Genshin Characters</h1>
+      <div class="main">
+          <button class="vision">Pyro</button>
+          <button class="vision">Hydro</button>
+          <button class="vision">Anemo</button>
+          <button class="vision">Electro</button>
+          <button class="vision">Dendro</button>
+          <button class="vision">Geo</button>
+          <button class="vision">Cryo</button>
+          <button id="changetheme">Change Theme</button>
+  
+          <form action="" id="form">
+            <label for="searchfor"> Search Here:</label>
+            <input type="text" name="searchfor" id="searchfor">
+            <input type="submit" value="Enter">
+        </form>
+         <!-- a form collects whatever the user inputs into the blanks, has multiple ways the user can input the data (text, checkbox, submit, etc.)-->
+         <div class="cardcontainer">
+          <!--      card should include name, description, vision, weapon, birthday, and rarity  -->
+         </div>
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

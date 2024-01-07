@@ -1,0 +1,127 @@
+html, 
+body{
+  box-sizing: border-box;
+  text-align: center;
+}
+:root {
+    --green1: #CAD2C5;
+    --green2: #84A98C;
+    --green3: #52796F;
+    --green4: #354F52;
+    --green5: #2F3E46;
+
+    --white1: #edede9;
+    --white2: #d6ccc2;
+    --white3: #f5ebe0;
+    --white4: #e3d5ca;
+    --white5: #000;
+
+    /* intentions */
+    --primary:var(--green1);
+    --secondary:var(--green2);
+    --tertiary:var(--green3);
+    --quaternary:var(--green4);
+    --quinary:var(--green5);
+
+    /*typography*/
+    --h1: 7.594rem;
+    --h2: 5.063rem;
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem; 
+}
+
+.greenmode {
+  --primary:var(--green1);
+  --secondary:var(--green2);
+  --tertiary:var(--green3);
+  --quaternary:var(--green4);
+  --quinary:var(--green5);
+};
+
+.whitemode{
+  --primary:var(--white1);
+  --secondary:var(--white2);
+  --tertiary:var(--white3);
+  --quaternary:var(--white4);
+  --quinary:var(--white5);
+}
+
+body{
+  background-color: var(--primary);
+}
+
+h1,h2,h3,h4,h5{
+  text-align: center;
+  color: var(--quinary);
+}
+
+h1{
+  font-size: var(--h1);
+}
+
+h2{
+  font-size: var(--h2);
+}
+
+h3{
+  font-size: var(--h3);
+}
+
+h4{
+  font-size: var(--h4);
+}
+
+h5{
+   font-size: var(--h5);
+}
+
+#changetheme, .vision{
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  background-color: var(--secondary);
+  transition-duration: 0.4s;
+}
+
+.vision:hover, #changetheme:hover{
+  background-color: #ACBFA4;
+}
+
+.vision:active, #changetheme:active{
+  background-color: #ACBFA4;
+  box-shadow: 0 5px #666;
+  transform: translateY(-4px);
+}
+
+.title{
+  background-color: var(--secondary);
+  border: 2px solid var(--green4);
+  border-radius: 12px;
+}
+
+.cardcontainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  background-color: var(--secondary);
+  border-radius: 12px;
+  padding: 2%;
+  margin: 2rem 2rem;
+  border: 2px solid black;
+  height: 1000px;
+  width: 400px;
+}
+
+.errorcard{
+  background-color: var(--secondary);
+  border-radius: 12px;
+  height: 600px;
+  width: 1000px;
+}
+
