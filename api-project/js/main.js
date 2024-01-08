@@ -64,6 +64,17 @@ function filtering() {
 getData(URL);
 filtering();
 
+DOMselectors.changetheme.addEventListener("click", function () {
+    if (document.body.classList.contains("greenmode")) {
+        document.body.classList.add("whitemode");
+        document.body.classList.remove("greenmode");
+    } else {
+        document.body.classList.add("greenmode");
+        document.body.classList.remove("whitemode");
+    }
+});
+
+
 DOMselectors.form.addEventListener("submit", function (event) {
     event.preventDefault();
     //prevents the site from reloading anytime something is put into the search bar
