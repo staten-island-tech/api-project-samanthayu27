@@ -5,7 +5,8 @@ const URL = 'https://genshinlist.com/api/characters';
 let data; 
 //the let data makes the variable data more widely available 
 
-async function getData(url) {
+async function getData(URL) {
+
     try {
         const response = await fetch(URL);
         //requesting a response to REST API's
@@ -22,7 +23,7 @@ async function getData(url) {
 
     } catch (error) {
         console.log(error, "uhm idk dont ask me");
-        //says this in the console if the api doesnt work  
+        //says this in the console if the api doesnt work but i made a card instead hehehehe 
     }
 }
 
@@ -63,17 +64,6 @@ function filtering() {
 
 getData(URL);
 filtering();
-
-DOMselectors.changetheme.addEventListener("click", function () {
-    if (document.body.classList.contains("greenmode")) {
-        document.body.classList.add("whitemode");
-        document.body.classList.remove("greenmode");
-    } else {
-        document.body.classList.add("greenmode");
-        document.body.classList.remove("whitemode");
-    }
-});
-
 
 DOMselectors.form.addEventListener("submit", function (event) {
     event.preventDefault();

@@ -9,13 +9,6 @@ body{
     --green3: #52796F;
     --green4: #354F52;
     --green5: #2F3E46;
-
-    --white1: #edede9;
-    --white2: #d6ccc2;
-    --white3: #f5ebe0;
-    --white4: #e3d5ca;
-    --white5: #000;
-
     /* intentions */
     --primary:var(--green1);
     --secondary:var(--green2);
@@ -38,14 +31,6 @@ body{
   --quaternary:var(--green4);
   --quinary:var(--green5);
 };
-
-.whitemode{
-  --primary:var(--white1);
-  --secondary:var(--white2);
-  --tertiary:var(--white3);
-  --quaternary:var(--white4);
-  --quinary:var(--white5);
-}
 
 body{
   background-color: var(--primary);
